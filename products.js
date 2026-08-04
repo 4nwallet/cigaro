@@ -11,72 +11,44 @@ brand:"Winston",
 products:[
 
 {
-name:"Winston Ultra",
-price:220000,
-image:"images/products/winston-ultra.jpg",
-available:true,
-show:true
-},
-
-{
 name:"Winston Light",
-price:220000,
 image:"images/products/winston-light.jpg",
-available:true,
-show:true
-},
-
-
-{
-name:"Winston XStyle",
-price:220000,
-image:"images/products/winston-xstyle.jpg",
-available:true,
-show:true
-}  
-  
-]
-
-},
-
-
-{
-brand:"Marlboro",
-
-products:[
-
-{
-name:"Marlboro Gold Touch",
-price:240000,
-image:"images/products/marlboro-gold-touch.jpg",
-available:true,
 show:true
 },
 
 {
-name:"Marlboro Flavor",
-price:240000,
-image:"images/products/marlboro-flavor.jpg",
-available:true,
+name:"Winston Ultra",
+image:"images/products/winston-ultra.jpg",
 show:true
-}
-  
-
-]
-
 },
 
+{
+name:"Winston Eagle",
+image:"images/products/winston-eagle.jpg",
+show:true
+},
 
 {
-brand:"Kent",
-
-products:[
+name:"Winston XS Ultra",
+image:"images/products/winston-xs-ultra.jpg",
+show:true
+},
 
 {
-name:"Kent Nano",
-price:230000,
-image:"images/products/kent-nano.jpg",
-available:true,
+name:"Winston Slim Ultra",
+image:"images/products/winston-slim-ultra.jpg",
+show:true
+},
+
+{
+name:"Winston Slim Light",
+image:"images/products/winston-slim-light.jpg",
+show:true
+},
+
+{
+name:"Winston XS Light",
+image:"images/products/winston-xs-light.jpg",
 show:true
 }
 
@@ -92,9 +64,69 @@ products:[
 
 {
 name:"Napoli",
-price:200000,
 image:"images/products/napoli.jpg",
-available:true,
+show:true
+}
+
+]
+
+},
+
+
+{
+brand:"Marlboro",
+
+products:[
+
+{
+name:"Marlboro Gold Touch",
+image:"images/products/marlboro-gold-touch.jpg",
+show:true
+}
+
+]
+
+},
+
+
+{
+brand:"Kent",
+
+products:[
+
+{
+name:"Kent Mix",
+image:"images/products/kent-mix.jpg",
+show:true
+},
+
+{
+name:"Kent Navy Blue",
+image:"images/products/kent-navy-blue.jpg",
+show:true
+},
+
+{
+name:"Kent Power 8 Silver",
+image:"images/products/kent-power-8-silver.jpg",
+show:true
+},
+
+{
+name:"Kent Power",
+image:"images/products/kent-power.jpg",
+show:true
+},
+
+{
+name:"Kent Blue",
+image:"images/products/kent-blue.jpg",
+show:true
+},
+
+{
+name:"Kent 4",
+image:"images/products/kent-4.jpg",
 show:true
 }
 
@@ -109,10 +141,26 @@ brand:"Camel",
 products:[
 
 {
+name:"Camel White",
+image:"images/products/camel-white.jpg",
+show:true
+},
+
+{
 name:"Camel Blue",
-price:220000,
 image:"images/products/camel-blue.jpg",
-available:true,
+show:true
+},
+
+{
+name:"Camel Silver",
+image:"images/products/camel-silver.jpg",
+show:true
+},
+
+{
+name:"Camel Black",
+image:"images/products/camel-black.jpg",
 show:true
 }
 
@@ -122,15 +170,37 @@ show:true
 
 
 {
-brand:"Esse",
+brand:"Cavallo",
 
 products:[
 
 {
-name:"Esse Change",
-price:210000,
-image:"images/products/esse-change.jpg",
-available:true,
+name:"Cavallo Green",
+image:"images/products/cavallo-green.jpg",
+show:true
+},
+
+{
+name:"Cavallo Blue",
+image:"images/products/cavallo-blue.jpg",
+show:true
+},
+
+{
+name:"Cavallo Orange",
+image:"images/products/cavallo-orange.jpg",
+show:true
+},
+
+{
+name:"Cavallo Purple",
+image:"images/products/cavallo-purple.jpg",
+show:true
+},
+
+{
+name:"Cavallo Watermelon",
+image:"images/products/cavallo-watermelon.jpg",
 show:true
 }
 
@@ -139,6 +209,7 @@ show:true
 }
 
 ];
+
 
 
 // ======================================
@@ -150,13 +221,6 @@ const container =
 document.getElementById("products-container");
 
 
-function formatPrice(price){
-
-return price.toLocaleString("fa-IR")+" تومان";
-
-}
-
-
 function createCard(product){
 
 if(!product.show){
@@ -165,9 +229,11 @@ return "";
 
 }
 
+
 return `
 
 <div class="product-card">
+
 
 <img
 
@@ -177,7 +243,9 @@ class="product-image"
 
 alt="${product.name}">
 
+
 <div class="product-body">
+
 
 <div class="product-name">
 
@@ -186,29 +254,8 @@ ${product.name}
 </div>
 
 
-${
-product.available
-
-?
-
-`<div class="product-price">
-
-${formatPrice(product.price)}
-
-</div>`
-
-:
-
-`<div class="out-of-stock">
-
-❌ ناموجود
-
-</div>`
-
-}
-
-
 </div>
+
 
 </div>
 
@@ -275,4 +322,3 @@ html+=`
 
 
 container.innerHTML=html;
-
