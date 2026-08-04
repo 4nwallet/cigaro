@@ -50,7 +50,14 @@ show:true
 name:"Winston XS Light",
 image:"images/products/winston-xs-light.jpg",
 show:true
+},
+
+{
+name:"Winston XS Ultra",
+image:"images/products/winston-xs-ultra.jpg",
+show:true
 }
+  
 
 ]
 
