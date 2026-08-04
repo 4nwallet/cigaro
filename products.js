@@ -114,8 +114,8 @@ show:true
 },
 
 {
-name:"Kent Navy Blue",
-image:"images/products/kent-navy-blue.jpg",
+name:"Kent Plus",
+image:"images/products/kent-plus.jpg",
 show:true
 },
 
