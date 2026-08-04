@@ -29,8 +29,8 @@ show:true
 },
 
 {
-name:"Winston XS Ultra",
-image:"images/products/winston-xs-ultra.jpg",
+name:"Winston XStyle Ultra",
+image:"images/products/winston-xstyle-ultra.jpg",
 show:true
 },
 
