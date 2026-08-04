@@ -126,8 +126,8 @@ show:true
 },
 
 {
-name:"Kent Power",
-image:"images/products/kent-power.jpg",
+name:"Kent Double Power",
+image:"images/products/kent-double-power.jpg",
 show:true
 },
 
