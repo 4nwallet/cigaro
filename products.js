@@ -89,6 +89,12 @@ products:[
 name:"Marlboro Gold Touch",
 image:"images/products/marlboro-gold-touch.jpg",
 show:true
+},
+
+  {
+name:"Marlboro Flavor Code",
+image:"images/products/marlboro-flavor-code.jpg",
+show:true
 }
 
 ]
