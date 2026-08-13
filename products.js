@@ -216,8 +216,8 @@ show:true
 },
 
 {
-name:"Cavallo Orange",
-image:"images/products/cavallo-orange.jpg",
+name:"Cavallo Mango",
+image:"images/products/cavallo-mango.jpg",
 show:true
 },
 
