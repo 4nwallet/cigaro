@@ -222,8 +222,8 @@ show:true
 },
 
 {
-name:"Cavallo Purple",
-image:"images/products/cavallo-purple.jpg",
+name:"Cavallo Blueberry",
+image:"images/products/cavallo-blueberry.jpg",
 show:true
 },
 
