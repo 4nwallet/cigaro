@@ -79,6 +79,22 @@ show:true
 
 },
 
+{
+brand:"Forman",
+
+products:[
+
+{
+name:"Forman White",
+image:"images/products/forman-white.jpg",
+show:true
+}
+
+]
+
+},
+
+  
 
 {
 brand:"Marlboro",
